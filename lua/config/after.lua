@@ -9,11 +9,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 vim.g.gruvbox_baby_function_style = "NONE"
 vim.g.gruvbox_baby_keyword_style = "italic"
 
-local colors = require("gruvbox-baby.colors").config()
+-- local colors = require("gruvbox-baby.colors").config()
 vim.g.gruvbox_baby_highlights = {Normal = {fg = "#ebdbb2", bg = "NONE", style="underline"}}
 
 vim.g.gruvbox_baby_telescope_theme = 1
-
 vim.g.gruvbox_baby_transparent_mode = 1
 
 vim.cmd[[colorscheme gruvbox-baby]]
