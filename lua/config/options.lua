@@ -18,6 +18,10 @@ local options = {
 	smartindent = true,
 	tildeop = true,
 	winborder = "double",
+    foldlevelstart = 99,
+    foldlevel = 99,
+    foldenable = true,
+    foldcolumn = "1"
 }
 
 for k, v in pairs(options) do
