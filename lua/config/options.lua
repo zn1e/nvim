@@ -12,7 +12,6 @@ local options = {
 	virtualedit = "block",
 	inccommand = "split",
 	ignorecase = true,
-	termguicolors = true,
 	confirm = true,
 	signcolumn = "yes",
 	smartindent = true,
@@ -23,6 +22,12 @@ local options = {
     foldenable = true,
     foldcolumn = "1"
 }
+
+if vim.env.TERM:find('256color') then
+    options.termguicolors = true
+else
+    options.termguicolors = false
+end
 
 for k, v in pairs(options) do
 	vim.opt[k] = v

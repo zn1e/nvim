@@ -9,6 +9,6 @@ return {
 	  lsp_file_methods = { autosave_changes = true },
 	  view_options = { show_hidden = true }
   },
-  dependencies = { "nvim-tree/nvim-web-devicons", opts = true },
+  dependencies = { "nvim-tree/nvim-web-devicons", opts = {} },
   lazy = false,
 }

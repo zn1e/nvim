@@ -24,6 +24,7 @@ return {
 		            node_decremental = '<leader>sd',
 		        }
 	        },
+            indent = { enable = true },
         },
     },
 }
