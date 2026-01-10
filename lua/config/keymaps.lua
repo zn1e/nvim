@@ -52,9 +52,19 @@ keymap('n', '<leader>q', ':lua toggle_quickfix()<CR>', { silent = true })
 -- vertical split
 keymap("n", "<leader>vs", ":vsplit<CR>", opts)
 
+-- replace all words under cursor
+keymap("n", "<C-s>", ":%s/<C-r><C-w>//g<left><left>", opts)
+
 -- rust related
 keymap("n", "<leader>cc", ":vsplit<CR>:terminal cargo check<CR>", opts)
 keymap("n", "<leader>cb", ":vsplit<CR>:terminal cargo build --release<CR>", opts)
 keymap("n", "<leader>cr", ":vsplit<CR>:terminal cargo run <CR>", opts)
 keymap("n", "<leader>ct", ":vsplit<CR>:terminal cargo test<CR>", opts)
+
+-- git related
+keymap("n", "<leader>gs", ":Git status<CR>", opts)
+keymap("n", "<leader>ga", ":Git add .<CR>", opts)
+keymap("n", "<leader>gd", ":Git diff<CR>", opts)
+keymap("n", "<leader>gl", ":G log<CR>", opts)
+keymap("n", "<leader>gp", ":G push", opts)
 
