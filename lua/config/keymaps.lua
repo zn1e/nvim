@@ -66,5 +66,5 @@ keymap("n", "<leader>gs", ":Git status<CR>", opts)
 keymap("n", "<leader>ga", ":Git add .<CR>", opts)
 keymap("n", "<leader>gd", ":Git diff<CR>", opts)
 keymap("n", "<leader>gl", ":G log<CR>", opts)
-keymap("n", "<leader>gp", ":G push", opts)
+keymap("n", "<leader>gp", ":G push<CR>", opts)
 
