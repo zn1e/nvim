@@ -1,7 +1,7 @@
 return {
     {
         "mason-org/mason-lspconfig.nvim",
-        opts = {},
+        opts = { automaitc_enable = false },
         dependencies = {
             { "mason-org/mason.nvim",
                 config = function ()
